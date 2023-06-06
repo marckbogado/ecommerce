@@ -12,13 +12,13 @@ class Page{
         "data"=>[]
     ]; //opçoes padrões, onde DATA irá armazenar os nossos dados
 
-    public function __construct($opts = array()) //opções da classe
+    public function __construct($opts = array(), $tpl_dir = "/views/") //opções da classe
     {
         //mesclando dois arrays, com o ultimo passado sobrescrevendo o outro
         $this->options = array_merge($this->defaults, $opts); //mescla as duas informações e guarda dentro do atributo OPTIONS
 
         $config = array(
-            "tpl_dir"       => $_SERVER["DOCUMENT_ROOT"]."/views/", //caminho para encontrar o arquivo html
+            "tpl_dir"       => $_SERVER["DOCUMENT_ROOT"].$tpl_dir, //caminho para encontrar o arquivo html
             "cache_dir"     => $_SERVER["DOCUMENT_ROOT"]."/views-cache/",
             "debug"         => false
         );
