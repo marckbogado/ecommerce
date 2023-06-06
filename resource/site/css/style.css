@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--cor-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+blockquote,
+dd,
+p {
+    margin: 0;
+}
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*CORES*/
+:root {
+    --cor-0: #ffffff;
+    --cor-1: #ebebeb;
+    --cor-2: #fd9800;
+    --cor-3: #bc9355;
+    --cor-4: #414141;
+    --cor-5: #2e2e2e;
+    --cor-6: #191919;
+}
+
+.cor-0 {
+    color: var(--cor-0);
+}
+.cor-1 {
+    color: var(--cor-1);
+}
+.cor-2 {
+    color: var(--cor-2);
+}
+.cor-3 {
+    color: var(--cor-3);
+}
+.cor-4 {
+    color: var(--cor-4);
+}
+.cor-5 {
+    color: var(--cor-5);
+}
+.cor-6 {
+    color: var(--cor-6);
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*MENU-CONTA*/
+.header-area {
+    background-color: var(--cor-5);
+}
+
+.menu-conta {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-conta li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-block;
+}
+
+.menu-conta li a:hover {
+    background-color: var(--cor-4);
+}
+
+.menu-conta-dados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-conta-dados li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.menu-conta-dados li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+/*--------------------menu dropdown------------------*/
+.dropdown-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-moedas-btn {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+  
+.menu-moedas-btn:hover, .menu-moedas-btn:focus {
+    background-color: var(--cor-4);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/*Conteúdo escondido*/
+.dropdown-conteudo {
+    display: none;
+    position: absolute;
+    background-color: var(--cor-1);
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/*Links dentro do dropdown*/
+.dropdown-conteudo a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/*Hover dos links dentro do dropdown links on hover*/
+.dropdown-conteudo a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
+/*MENU-SITE*/
+.menu-site-area {
+    background-color: var(--cor-6);
+}
+
+.menu-site {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-principal li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding: 20px 5px;
+    display: inline-block;
+}
+
+.menu-principal li:hover {
+    background-color: var(--cor-5);
+}
+
+.carrinho-compras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.carrinho-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+
+/*CONTEUDO PRINCIPAL*/
+.conteudo-principal {
+    background-image: url(../../site/assets/pexels-pixabay-164903\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.titulo h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+    padding-top: 60px;
+}
+
+.titulo p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 10px;
+    width: 40ch;
+    padding-bottom: 60px;
+}
+
+.botao {
+    padding: 10px 24px;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--cor-1);
+    background: var(--cor-3);
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+    max-width: max-content;
+}
+
+.botao:hover {
+    background: linear-gradient(var(--cor-3), #755f3d);
+}
+
+.info-empresa-geral {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    padding-top: 40px;
+}
+
+.info-empresa {
+    background-color: var(--cor-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 30px 0 30px 0;
+}
+
+.info-empresa p {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.novidades-eventos-geral {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding-top: 40px;
+}
+
+.novidades-eventos-bg {
+    background-color: var(--cor-6);
+}
+
+.novidades-eventos-bg img {
+    width: 100%;
+}
+
+.novidades-eventos {
+    background-color: var(--cor-6);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+.novidades-eventos h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 6px;
+}
+
+.novidades-eventos p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.evento-botao {
+    padding-top: 27px;
+    padding-bottom: 12px;
+}
+
+
+
+/*PRODUTOS*/
+.titulo-guitarra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.titulo-guitarra h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.produtos-guitarra-geral {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 34px;
+}
+
+.guitarra-imagem {
+    border: solid 1px var(--cor-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos-guitarra {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.produtos-guitarra p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+.produtos-guitarra span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.produtos-guitarra a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+.botao-carrinho {
+    padding: 10px 20px;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--cor-1);
+    background: var(--cor-3);
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+    max-width: max-content;
+}
+
+.botao-carrinho:hover {
+    background: linear-gradient(var(--cor-3), #755f3d);
+}
+
+
+
+/*BANNER*/
+.banner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: var(--cor-6);
+}
+
+.frase {
+    padding: 30px;
+}
+
+.frase h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    padding-bottom: 8px;
+}
+
+.frase p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.imagem1 {
+    background-image: url(../../site/assets/playingguitar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagem2 {
+    background-image: url(../../site/assets/show.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*MARCAS*/
+.marcas-bg {
+    background-color: var(--cor-5);
+}
+
+.marcas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px ;
+}
+
+
+/*FOOTER*/
+.footer-bg {
+    background-color: var(--cor-6);
+}
+
+.news-redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px var(--cor-5);
+}
+
+.newsletter,
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.newsletter span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.newsletter input {
+        padding: 12px 24px;
+}
+
+.botao-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.redes-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-geral-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.info-empresa-footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 20px;
+}
+
+.navegacao-footer h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.navegacao-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navegacao-lista li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    border-bottom: solid 1px var(--cor-5);
+    padding-bottom: 10px;
+}
+
+.contato-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-geral-footer h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.contato-geral-footer li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+.footer-final-bg {
+    background-color: var(--cor-5);
+}
+
+.footer-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.cartoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}

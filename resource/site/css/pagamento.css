@@ -1,0 +1,113 @@
+/*LOGIN*/
+.titulo-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.titulo-login h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+.acessar-geral {
+    margin-bottom: 120px;
+}
+
+.pagamento-geral {
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.detalhe-compra h2,
+#pagamento-form h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.pagamento-campo input {
+    padding: 10px;
+    border: 1px solid #cfcdcd;
+}
+
+.pagamento-campo input:focus {
+    outline: none;
+    border-color: #755f3d;
+    box-shadow: 0 0 0 2px #fea;
+}
+
+.button {
+    padding: 10px 24px;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--cor-1);
+    background: var(--cor-3);
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+    max-width: max-content;
+}
+
+.button:hover {
+    background: linear-gradient(var(--cor-3), #755f3d);
+}
+
+
+.shop_table {
+    display: grid;
+    margin-bottom: 40px;
+    border: solid 1px #cfcdcd;
+    padding: 20px;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+th {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 6px;
+}
+
+thead tr th {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+
+td {
+    padding-bottom: 6px;
+}
+
+.bold {
+    font-weight: bold;
+}

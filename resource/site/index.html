@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Superhero</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--MENU TOPO-->
+    <header class="header-area">
+        <nav class="menu-conta container">
+            <ul class="menu-conta-dados">
+                <li class="cor-1"><a href="#"><img src="assets/icon/user.svg" alt="Usuário">Minha Conta</a></li>
+                <li class="cor-1"><a href="#"><img src="assets/icon/heart.svg" alt="Coração">Lista de Desejos</a></li>
+                <li class="cor-1"><a href="#"><img src="assets/icon/shopping-cart.svg" alt="Carrinho">Meu Carrinho</a></li>
+                <li class="cor-1"><a href="login.html"><img src="assets/icon/lock.svg" alt="Cadeado">Login</a></li>
+            </ul>
+            <div class="dropdown-geral">
+                <div class="dropdown">
+                    <a onclick="dropdown()" class="menu-moedas-btn cor-1">Moeda <img src="assets/icon/bxs_down-arrow.svg" alt="seta para baixo"></a>
+                    <div id="meuDropdown" class="dropdown-conteudo">
+                        <a href="#" class="cor-6">BRL</a>
+                        <a href="#" class="cor-6">USD</a>
+                      </div>
+                </div>
+                <div class="dropdown">
+                    <a onclick="dropdown2()" class="menu-moedas-btn cor-1">Idioma <img src="assets/icon/bxs_down-arrow.svg" alt="seta para baixo"></a>
+                    <div id="meuDropdown2" class="dropdown-conteudo">
+                        <a href="#" class="cor-6">Português</a>
+                        <a href="#" class="cor-6">Inglês</a>
+                        <a href="#" class="cor-6">Espanhol</a>
+                      </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!--MENU NAVEGAÇÃO PRINCIPAL-->
+    <nav class="menu-site-area">
+        <div class="menu-site container">
+            <img src="assets/icon/Guitar Superhero.svg" alt="Logo Guitar Superhero">
+            <ul class="menu-principal">
+                <li class="cor-1"><a href="#">Home</a></li>
+                <li class="cor-1"><a href="#">Podutos</a></li>
+                <li class="cor-1"><a href="#">Sobre Nós</a></li>
+                <li class="cor-1"><a href="#">Contato</a></li>
+            </ul>
+            <ul class="carrinho-compras">
+                <li><a href=""><img src="assets/icon/heart-outline.svg" alt=""></a></li>
+                <li class="carrinho-item">
+                    <a href="carrinho.html" class="cor-1"><img src="assets/icon/clarity_shopping-cart-line.svg" alt=""> - <span class="cart-amunt">R$100</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--CAPA DA PÁGINA-->
+    <main class="conteudo-principal">
+        <div class="titulo container">
+            <h1 class="cor-1">Life is Music!</h1>
+            <p class="cor-3">Vendemos as melhores guitarras do mercado, melhores marcas e qualidade.
+            Aqui você também encontra os melhores fones de ouvido, afinal, life is music!
+            </p>
+
+            <a href="#" class="botao">Nossos Produtos</a>
+    </main>
+
+
+    <!--INFORMAÇÕES GERAIS DA LOJA-->
+    <section class="info-empresa-geral container">
+        <div class="info-empresa">
+            <img src="assets/icon/fa_truck.svg" alt="Caminhão">
+            <p class="cor-1">frete grátis</p>
+        </div>
+        <div class="info-empresa">
+            <img src="assets/icon/icomoon-free_bubbles4.svg" alt="Caminhão">
+            <p class="cor-1">atendimento ao cliente</p>
+        </div>
+        <div class="info-empresa">
+            <img src="assets/icon/fa6-solid_lock.svg" alt="Cadeado">
+            <p class="cor-1">pagamento seguro</p>
+        </div>
+        <div class="info-empresa">
+            <img src="assets/icon/solar_shield-check-outline.svg" alt="Caminhão">
+            <p class="cor-1">garantia vitalícia</p>
+        </div>
+    </section>
+
+
+    <!--EVENTOS/NOVIDADES-->
+    <section class="novidades-eventos-geral container">
+        <div class="novidades-eventos-bg">
+            <img src="assets/lespaul.png" alt="Guitarra">
+            <div class="novidades-eventos">
+                <h3 class="cor-1">Les Paul</h3>
+                <p class="cor-3">O modelo preferido dos melhores.</p>
+                <div class="evento-botao"><a href="#" class="botao eventos">Veja os modelos</a>
+                </div>
+            </div>
+        </div>
+        <div class="novidades-eventos-bg">
+            <img src="assets/evento.png" alt="Homem erguendo guitarra">
+            <div class="novidades-eventos">
+                <h3 class="cor-1">Lifestyle Event</h3>
+                <p class="cor-3">O evento de todos os Superheroes.</p>
+                <div class="evento-botao">
+                    <a href="#" class="botao eventos">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="novidades-eventos-bg">
+            <img src="assets/fones.png" alt="Garota com headphone">
+            <div class="novidades-eventos">
+                <h3 class="cor-1">Headphones</h3>
+                <p class="cor-3">Os melhores headphones estão aqui!</p>
+                <div class="evento-botao"><a href="#" class="botao eventos">Veja os modelos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--PRODUTOS-GUITARRAS-->
+    <section class="produtos-geral">
+        <div class="titulo-guitarra">
+            <h2 class="cor-6">Guitarras</h2>
+        </div>
+
+        <!--GUITARRAS-->
+        <div class="produtos-guitarra-geral container">
+            <div class="produtos-guitarra">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/SG Special - Faded Pelham Blue 1.png" alt="Guitarra azul"></a>
+                </div>
+                <p class="cor-6">SG Special - Faded Pelham Blue</p>
+                <span class="cor-3">$ 3.900,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+
+            <div class="produtos-guitarra container">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/70s Explorer - Classic White 1.png" alt="Guitarra branca"></a>
+                </div>
+                <p class="cor-6">70's Explorer - The Classic White</p>
+                <span class="cor-3">$ 3.700,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+
+            <div class="produtos-guitarra container">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/Striker Figured HSS - Transparent Ebony 1.png" alt="Guitarra preta"></a>
+                </div>
+                <p class="cor-6">Striker Figured HSS - Transparent Ebony</p>
+                <span class="cor-3">$ 1.200,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+
+            <div class="produtos-guitarra container">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/LPS5F00FHNH1_front 1.png" alt="Guitarra amarela"></a>
+                </div>
+                <p class="cor-6">Les Paul Standard 50s - Vintage Honey Burst</p>
+                <span class="cor-3">$ 5.200,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+
+            <div class="produtos-guitarra container">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/1958 Korina Flying V Reissue (White Pickguard) - Natural 1.png" alt="Guitarra azul"></a>
+                </div>
+                <p class="cor-6">1958 Korina Flying V Reissue (White Pickguard)</p>
+                <span class="cor-3">$ 5.000,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+
+
+            <div class="produtos-guitarra">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/Nite-V Plus - Alpine White 1.png" alt="Guitarra branca"></a>
+                </div>
+                <p class="cor-6">Nite-V Plus - Alpine White SuperH collection</p>
+                <span class="cor-3">$ 1.900,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+
+            <div class="produtos-guitarra">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/Les Paul Special - TV Yellow 1-799-00 1.png" alt="Guitarra amarela"></a>
+                </div>
+                <p class="cor-6">Les Paul Special - TV Yellow 1-799-00</p>
+                <span class="cor-3">$ 4.700,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+
+            <div class="produtos-guitarra">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/Flying V Custom wEbony Fingerboard Gloss Ebony 1.png" alt="Guitarra preta"></a>
+                </div>
+                <p class="cor-6">Flying V Custom wEbony Fingerboard Gloss Ebony</p>
+                <span class="cor-3">$ 4.900,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+
+            <div class="produtos-guitarra">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/Nite-V - Satin Black 1.png" alt="Guitarra preta"></a>
+                </div>
+                <p class="cor-6">Nite-V - Satin Black SuperH collection</p>
+                <span class="cor-3">$ 2.000,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+
+            <div class="produtos-guitarra">
+                <div class="guitarra-imagem">
+                    <a href="#"><img src="assets/produtos/Les Paul Modern - Faded Pelham Blue Top 1.png" alt="Guitarra azul"></a>
+                </div>
+                <p class="cor-6">Les Paul Modern - Faded Pelham Blue</p>
+                <span class="cor-3">$ 3.900,00</span>
+                <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+            </div>
+        </div>
+
+
+        <!--BANNER-->
+        <section class="banner container">
+            <div class="frase">
+                <h2 class="cor-1">Do Rock Clássico ao Heavy Metal</h2>
+                <p class="cor-3">Aqui você encontra todos os estilos.</p>
+            </div>
+            <div class="imagem1"></div>
+            <div class="imagem2"></div>
+        </section>
+
+
+        <!--PRODUTOS-HEADPHONES-->
+        <section class="produtos-geral">
+            <div class="titulo-guitarra">
+            <h2 class="cor-6">Headphones</h2>
+            </div>
+
+            <!--HEADPHONES-->
+            <div class="produtos-guitarra-geral container">
+                <div class="produtos-guitarra">
+                    <div class="guitarra-imagem">
+                        <a href="#"><img src="assets/produtos/headphone-04.svg" alt="Headphone roxo"></a>
+                    </div>
+                    <p class="cor-6">Headphone Purple Go</p>
+                    <span class="cor-3">$ 1.300,00</span>
+                    <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+                </div>
+
+                <div class="produtos-guitarra container">
+                    <div class="guitarra-imagem">
+                        <a href="#"><img src="assets/produtos/headphone-06 1.svg" alt="Headphone preto"></a>
+                    </div>
+                    <p class="cor-6">Headphone Beats Black</p>
+                    <span class="cor-3">$ 2.000,00</span>
+                    <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+                </div>
+
+                <div class="produtos-guitarra container">
+                    <div class="guitarra-imagem">
+                        <a href="#"><img src="assets/produtos/headphone-08.svg" alt="Headphone vermelho"></a>
+                    </div>
+                    <p class="cor-6">Headphone Beats Red</p>
+                    <span class="cor-3">$ 2.000,00</span>
+                    <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+                </div>
+
+                <div class="produtos-guitarra container">
+                    <div class="guitarra-imagem">
+                        <a href="#"><img src="assets/produtos/headphone-1.svg" alt="Headphone azul"></a>
+                    </div>
+                    <p class="cor-6">Headphone JBL Blue</p>
+                    <span class="cor-3">$ 1.500,00</span>
+                    <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+                </div>
+
+                <div class="produtos-guitarra container">
+                    <div class="guitarra-imagem">
+                        <a href="#"><img src="assets/produtos/headphone-10.svg" alt="Headphone azul"></a>
+                    </div>
+                    <p class="cor-6">Headphone Beats Blue</p>
+                    <span class="cor-3">$ 2.200,00</span>
+                    <a href="#" class="botao-carrinho"><img src="assets/icon/clarity_shopping-cart-line-P.svg" alt=""> Add to cart</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--MARCAS-->
+        <aside class="marcas-bg">
+            <div class="marcas container">
+                <img src="assets/logos/logo-epiphone-white 1.svg" alt="Epiphone">
+                <img src="assets/logos/logo-kramer-white 1.svg" alt="Kramer">
+                <img src="assets/logos/logo-gibson-white 1.svg" alt="Gibson">
+                <img src="assets/logos/simple-icons_jbl.svg" alt="JBL">
+                <img src="assets/logos/logo-krk-white 1.svg" alt="KRK">
+                <img src="assets/logos/logo-steinberger-white 1.svg" alt="Steinberger">
+                <img src="assets/logos/logo-mesa-boogie-white 1.svg" alt="Mesa Boogie">
+                <img src="assets/logos/[CITYPNG 1.svg" alt="Beats">
+            </div>
+        </aside>
+
+
+        <!--FOOTER-->
+        <footer class="footer-bg">
+            <div class="news-redes container">
+                <div class="newsletter">
+                    <span class="cor-1">newsletter</span>
+                    <form action="#">
+                        <input type="text" placeholder="type your email">
+                        <button type="submit" value="Subscribe" class="botao botao-2"><img src="assets/icon/octicon_mail-24-branco.svg" alt="">Subscribe</button>
+                    </form>
+                </div>
+                <ul class="redes-footer">
+                    <li>
+                        <a href="#"><img src="assets/icon/icon-twitter 1.svg" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icon/raphael_feed.svg" alt="Feed"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icon/icon-instagram 1.svg" alt="Instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icon/icon-facebook 1.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icon/icon-youtube 1.svg" alt="Youtube"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-geral-footer container">
+                <div class="info-empresa-footer">
+                    <img src="assets/icon/Guitar SuperheroM.svg" alt="Guitar Superhero logo">
+                    <p class="cor-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                </div>
+                <div class="navegacao-footer">
+                    <h3 class="cor-1">Navegação</h3>
+                    <ul class="navegacao-lista cor-1">
+                        <li><a href="#">Minha Conta</a></li>
+                        <li><a href="#">Meus pedidos</a></li>
+                        <li><a href="#">Lista de Desejos</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="navegacao-footer">
+                    <h3 class="cor-1">Navegação</h3>
+                    <ul class="navegacao-lista cor-1">
+                        <li><a href="#">Categoria 01</a></li>
+                        <li><a href="#">Categoria 02</a></li>
+                        <li><a href="#">Categoria 03</a></li>
+                        <li><a href="#">Categoria 04</a></li>
+                        <li><a href="#">Categoria 05</a></li>
+                    </ul>
+                </div>
+                <div class="contato-geral-footer">
+                    <h3 class="cor-1">Fale com nós</h3>
+                    <ul class="contato-footer">
+                        <li class="cor-1">
+                            <a href="#"><img src="assets/icon/localização.svg" alt="localização"></a>
+                            Rua ALi Perto Nº 210, Bairro, Porto Alegre
+                        </li>
+                        <li class="cor-1">
+                            <a href="#"><img src="assets/icon/email.svg" alt="E-mail"></a>
+                            suporte_superhero@email.com
+                        </li>
+                        <li class="cor-1">
+                            <a href="#"><img src="assets/icon/fone.svg" alt="Telefone"></a>
+                            +55 (51) 999-999-999
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-final-bg">
+                <div class="footer-final container">
+                    <img src="assets/icon/Guitar Superhero P.svg" alt="Guitar Superhero logo">
+                    <p class="cor-1">© 2023 Marcelo Bogado - Alguns direitos reservados.</p>
+                    <ul class="cartoes">
+                        <li>
+                            <img src="assets/icon/mastercard.svg" alt="Mastercard">
+                        </li>
+                        <li>
+                            <img src="assets/icon/visa.svg" alt="Visa">
+                        </li>
+                        <li>
+                            <img src="assets/icon/discovery.svg" alt="Discover">
+                        </li>
+                        <li>
+                            <img src="assets/icon/paypal.svg" alt="paypal">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    
+
+        <script src="script.js"></script>
+</body>
+</html>

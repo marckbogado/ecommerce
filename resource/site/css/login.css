@@ -1,0 +1,130 @@
+/*LOGIN*/
+.titulo-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.titulo-login h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.acessar-geral {
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+.login-geral,
+.registro-geral {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#login-form,
+#registro-form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 40px 40px;
+}
+
+#login-form h2,
+#registro-form h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+#registro-form {
+    background-color: #e6e4e4;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+.login-usuario input,
+.login-senha input {
+    padding: 10px;
+    width: 240px;
+    border: 1px solid #cfcdcd;
+}
+
+.login-usuario input:focus,
+.login-senha input:focus {
+    outline: none;
+    border-color: #755f3d;
+    box-shadow: 0 0 0 2px #fea;
+}
+
+.button {
+    padding: 10px 24px;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--cor-1);
+    background: var(--cor-3);
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+    max-width: max-content;
+}
+
+.button:hover {
+    background: linear-gradient(var(--cor-3), #755f3d);
+}
+
+.inline {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 20px;
+}
+
+.lost-password {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.lost-password a:hover {
+    color: #fd9800;
+}
+
+
+/*REGISTRO*/
+.registro-nome input,
+.registro-email input,
+.registro-usuario input,
+.registro-senha input {
+    padding: 10px;
+    width: 240px;
+    border: 1px solid #cfcdcd;
+}
+
+.registro-nome input:focus,
+.registro-email input:focus,
+.registro-usuario input:focus,
+.registro-senha input:focus {
+    outline: none;
+    border-color: #755f3d;
+    box-shadow: 0 0 0 2px #fea;
+}

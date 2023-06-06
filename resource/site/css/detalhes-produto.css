@@ -1,0 +1,298 @@
+.titulo-geral-bg {
+    background-image: url(../assets/guitarra-produto.svg);
+}
+
+.titulo-geral {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.titulo-geral h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.categoria-produto {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 20px;
+}
+
+.categoria-produto p a:hover {
+    color: #fd9800;
+}
+
+.produto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+/*GALERIA DE IMAGENS*/
+.produto-container img {
+    max-width: 395px;
+    margin: 0;
+    border: solid 1px #b6b6b6;
+}
+
+.guitarra-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.guitarra-imagens img {
+    flex: 1;
+    max-width: 185px;
+}
+
+.guitarra-imagens img:first-child {
+    max-width: 395px;
+}
+
+
+
+/*DESCRIÇÃO DO PRODUTO*/
+.detalhes-produto h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+
+.detalhes-produto span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.cart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+
+.cart input {
+    max-width: 40px;
+    padding: 5px;
+    border: solid 1px #b6b6b6;
+}
+
+
+
+/*REVIEWS*/
+.tab_conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border-bottom: solid 1px #b6b6b6;
+}
+
+.tab_botao {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: #ebebeb;
+}
+
+.active {
+    background-color: #bc9352;
+    color: #ebebeb;
+}
+
+.conteudo-caixa {
+    padding: 20px 40px;
+}
+
+.conteudo-caixa .conteudo {
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from{transform: translateX(50px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+}
+
+.conteudo-caixa .conteudo.aparecer {
+    display: block;
+}
+
+.conteudo-caixa .conteudo h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px
+}
+
+.submit-review1{
+    padding-bottom: 30px;
+}
+
+.submit-review-campo {
+    display: grid;
+    gap: 6px;
+}
+
+.submit-review-campo label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.submit-review-campo input {
+    padding: 10px;
+    border: 1px solid #cfcdcd;
+}
+
+.submit-review-campo input:focus {
+    outline: none;
+    border-color: #755f3d;
+    box-shadow: 0 0 0 2px #fea;
+}
+
+
+
+
+
+/*rating*/
+.rating-chooser {
+    padding-top: 30px;
+}
+
+.rating-chooser p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.rating-post {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    width: max-content;
+}
+
+.estrela {
+    font-size: 30px;
+    cursor: pointer;
+    color: #bc9355;
+}
+
+.estrela::before {
+    content: "\2605";
+}
+
+.estrela.e-ativo ~ .estrela::before {
+    content: "\2606";
+}
+
+.rating-post:hover .estrela::before {
+    content: "\2605";
+}
+
+.estrela:hover ~ .estrela::before {
+    content: "\2606";
+}
+
+
+
+
+
+
+
+
+/*review*/
+.seu-review {
+    display: grid;
+    gap: 6px;
+    padding-top: 30px;
+}
+
+.seu-review label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.seu-review textarea {
+    border: 1px solid #cfcdcd;
+}
+
+.seu-review textarea:focus {
+    outline: none;
+    border-color: #755f3d;
+    box-shadow: 0 0 0 2px #fea;
+}
+
+.enviar-msg {
+    padding-top: 20px;
+}
+
+
+
+.busca-produto h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.busca-produto form {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+}
+
+.buscar-input {
+    border: 1px solid #cfcdcd;
+    padding: 10px;
+}
+
+.buscar-input:focus {
+    outline: none;
+    border-color: #755f3d;
+    box-shadow: 0 0 0 2px #fea;
+}
+
+.busca-produto-detalhes-p {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.busca-recente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.busca-recente h3,
+.busca-recente span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}

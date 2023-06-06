@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Superhero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!--MENU TOPO-->
+    <header class="header-area">
+        <nav class="menu-conta container">
+            <ul class="menu-conta-dados">
+                <li class="cor-1"><a href="#"><img src="assets/icon/user.svg" alt="Usuário">Minha Conta</a></li>
+                <li class="cor-1"><a href="#"><img src="assets/icon/heart.svg" alt="Coração">Lista de Desejos</a></li>
+                <li class="cor-1"><a href="carrinho.html"><img src="assets/icon/shopping-cart.svg" alt="Carrinho">Meu Carrinho</a></li>
+                <li class="cor-1"><a href="login.html"><img src="assets/icon/lock.svg" alt="Cadeado">Login</a></li>
+            </ul>
+            <div class="dropdown-geral">
+                <div class="dropdown">
+                    <a onclick="dropdown()" class="menu-moedas-btn cor-1">Moeda <img src="assets/icon/bxs_down-arrow.svg" alt="seta para baixo"></a>
+                    <div id="meuDropdown" class="dropdown-conteudo">
+                        <a href="#" class="cor-6">BRL</a>
+                        <a href="#" class="cor-6">USD</a>
+                      </div>
+                </div>
+                <div class="dropdown">
+                    <a onclick="dropdown2()" class="menu-moedas-btn cor-1">Idioma <img src="assets/icon/bxs_down-arrow.svg" alt="seta para baixo"></a>
+                    <div id="meuDropdown2" class="dropdown-conteudo">
+                        <a href="#" class="cor-6">Português</a>
+                        <a href="#" class="cor-6">Inglês</a>
+                        <a href="#" class="cor-6">Espanhol</a>
+                      </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!--MENU NAVEGAÇÃO PRINCIPAL-->
+    <nav class="menu-site-area">
+        <div class="menu-site container">
+            <img src="assets/icon/Guitar Superhero.svg" alt="Logo Guitar Superhero">
+            <ul class="menu-principal">
+                <li class="cor-1"><a href="index.html">Home</a></li>
+                <li class="cor-1"><a href="#">Podutos</a></li>
+                <li class="cor-1"><a href="#">Sobre Nós</a></li>
+                <li class="cor-1"><a href="#">Contato</a></li>
+            </ul>
+            <ul class="carrinho-compras">
+                <li><a href=""><img src="assets/icon/heart-outline.svg" alt=""></a></li>
+                <li class="carrinho-item">
+                    <a href="carrinho.html" class="cor-1"><img src="assets/icon/clarity_shopping-cart-line.svg" alt=""> - <span class="cart-amunt">R$100</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!--CAPA DA PÁGINA-->
+    <div class="titulo-geral-bg">
+        <div class="titulo-geral container">
+            <h2 class="cor-3">Carrinho</h2>
+        </div>
+    </div>
+
+    <section class="carrinho-geral container">
+        <div class="carrinho-l">
+            <div class="carrinho-produto">
+                <div class="carrinho-imagem">
+                    <img src="assets/produtos/SG Special-carrinho-P.svg" alt="Guitarra azul">
+                </div>
+                <div class="carrinho-produto-info">
+                    <div class="produto-info-c">
+                        <h2 class="cor-6">SG Special - Faded Pelham Blue</h2>
+                        <span class="cor-3">$ 3.900,00</span>
+                    </div>
+                    <form action="" class="cart">
+                        <div class="product-quantity">
+                            <div class="adicionar-remover">
+                                <input type="button" class="minus" value="-">
+                                <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
+                                <input type="button" class="plus" value="+">
+                            </div>
+
+                            <button class="remove botao-carrinho2" type="submit"><img src="assets/icon/bi_trash.svg" alt="lixeira"> Remover</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="frete-container">
+                <div class="frete">
+                    <h2 class="cor-3">Cálculo de Frete</h2>
+                    <form>
+                        <div class="coupon">
+                            <label for="cep" class="cor-6">CEP:</label>
+                            <input type="text" placeholder="00000-000" value="" id="cep" class="input-text2" name="cep">
+                            <input type="submit" value="Calcular" class="button botao-carrinho">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrinho-d">
+            <div class="resumo-compra-geral">
+                <div class="resumo-compra">
+                    <h2 class="cor-3">Resumo da Compra</h2>
+                    <p class="subtotal cor-6">Subtotal: <span class="amount cor-6">R$ 3.900,00</span></p>
+                    <p class="frete cor-6">Frete: <span class="amount">R$ 100,00</span></p>
+                    <p class="total cor-6">Total: <span class="amount cor-6">R$ 4.000,00</span></p>
+                    <form class="form-coupon">
+                        <div class="coupon">
+                            <label for="coupon_code" class="amount cor-6">Cupom:</label>
+                            <input type="text" placeholder="Coupon code" value="" id="coupon_code" class="input-text2" name="coupon_code">
+                            <input type="submit" value="Aplicar" name="apply_coupon" class="button botao-carrinho">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="total-compra">
+                <h2 class="cor-3">Total da Compra</h2>
+                <span class="amount">$ 4.000,00</span>
+            </div>
+            <div class="botao-checkout">
+                <input type="submit" value="Finalizar Compra" name="proceed" class="checkout-button botao">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--FOOTER-->
+    <footer class="footer-bg">
+        <div class="news-redes container">
+            <div class="newsletter">
+                <span class="cor-1">newsletter</span>
+                <form action="#">
+                    <input type="text" placeholder="type your email">
+                    <button type="submit" value="Subscribe" class="botao botao-2"><img src="assets/icon/octicon_mail-24-branco.svg" alt="">Subscribe</button>
+                </form>
+            </div>
+            <ul class="redes-footer">
+                <li>
+                    <a href="#"><img src="assets/icon/icon-twitter 1.svg" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icon/raphael_feed.svg" alt="Feed"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icon/icon-instagram 1.svg" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icon/icon-facebook 1.svg" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icon/icon-youtube 1.svg" alt="Youtube"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-geral-footer container">
+            <div class="info-empresa-footer">
+                <img src="assets/icon/Guitar SuperheroM.svg" alt="Guitar Superhero logo">
+                <p class="cor-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+            </div>
+            <div class="navegacao-footer">
+                <h3 class="cor-1">Navegação</h3>
+                <ul class="navegacao-lista cor-1">
+                    <li><a href="#">Minha Conta</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                    <li><a href="#">Lista de Desejos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="navegacao-footer">
+                <h3 class="cor-1">Navegação</h3>
+                <ul class="navegacao-lista cor-1">
+                    <li><a href="#">Categoria 01</a></li>
+                    <li><a href="#">Categoria 02</a></li>
+                    <li><a href="#">Categoria 03</a></li>
+                    <li><a href="#">Categoria 04</a></li>
+                    <li><a href="#">Categoria 05</a></li>
+                </ul>
+            </div>
+            <div class="contato-geral-footer">
+                <h3 class="cor-1">Fale com nós</h3>
+                <ul class="contato-footer">
+                    <li class="cor-1">
+                        <a href="#"><img src="assets/icon/localização.svg" alt="localização"></a>
+                        Rua ALi Perto Nº 210, Bairro, Porto Alegre
+                    </li>
+                    <li class="cor-1">
+                        <a href="#"><img src="assets/icon/email.svg" alt="E-mail"></a>
+                        suporte_superhero@email.com
+                    </li>
+                    <li class="cor-1">
+                        <a href="#"><img src="assets/icon/fone.svg" alt="Telefone"></a>
+                        +55 (51) 999-999-999
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-final-bg">
+            <div class="footer-final container">
+                <img src="assets/icon/Guitar Superhero P.svg" alt="Guitar Superhero logo">
+                <p class="cor-1">© 2023 Marcelo Bogado - Alguns direitos reservados.</p>
+                <ul class="cartoes">
+                    <li>
+                        <img src="assets/icon/mastercard.svg" alt="Mastercard">
+                    </li>
+                    <li>
+                        <img src="assets/icon/visa.svg" alt="Visa">
+                    </li>
+                    <li>
+                        <img src="assets/icon/discovery.svg" alt="Discover">
+                    </li>
+                    <li>
+                        <img src="assets/icon/paypal.svg" alt="paypal">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

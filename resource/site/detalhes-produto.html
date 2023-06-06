@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Superhero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/detalhes-produto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!--MENU TOPO-->
+    <header class="header-area">
+        <nav class="menu-conta container">
+            <ul class="menu-conta-dados">
+                <li class="cor-1"><a href="#"><img src="assets/icon/user.svg" alt="Usuário">Minha Conta</a></li>
+                <li class="cor-1"><a href="#"><img src="assets/icon/heart.svg" alt="Coração">Lista de Desejos</a></li>
+                <li class="cor-1"><a href="#"><img src="assets/icon/shopping-cart.svg" alt="Carrinho">Meu Carrinho</a></li>
+                <li class="cor-1"><a href="login.html"><img src="assets/icon/lock.svg" alt="Cadeado">Login</a></li>
+            </ul>
+            <div class="dropdown-geral">
+                <div class="dropdown">
+                    <a onclick="dropdown()" class="menu-moedas-btn cor-1">Moeda <img src="assets/icon/bxs_down-arrow.svg" alt="seta para baixo"></a>
+                    <div id="meuDropdown" class="dropdown-conteudo">
+                        <a href="#" class="cor-6">BRL</a>
+                        <a href="#" class="cor-6">USD</a>
+                      </div>
+                </div>
+                <div class="dropdown">
+                    <a onclick="dropdown2()" class="menu-moedas-btn cor-1">Idioma <img src="assets/icon/bxs_down-arrow.svg" alt="seta para baixo"></a>
+                    <div id="meuDropdown2" class="dropdown-conteudo">
+                        <a href="#" class="cor-6">Português</a>
+                        <a href="#" class="cor-6">Inglês</a>
+                        <a href="#" class="cor-6">Espanhol</a>
+                      </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!--MENU NAVEGAÇÃO PRINCIPAL-->
+    <nav class="menu-site-area">
+        <div class="menu-site container">
+            <img src="assets/icon/Guitar Superhero.svg" alt="Logo Guitar Superhero">
+            <ul class="menu-principal">
+                <li class="cor-1"><a href="index.html">Home</a></li>
+                <li class="cor-1"><a href="#">Podutos</a></li>
+                <li class="cor-1"><a href="#">Sobre Nós</a></li>
+                <li class="cor-1"><a href="#">Contato</a></li>
+            </ul>
+            <ul class="carrinho-compras">
+                <li><a href=""><img src="assets/icon/heart-outline.svg" alt=""></a></li>
+                <li class="carrinho-item">
+                    <a href="carrinho.html" class="cor-1"><img src="assets/icon/clarity_shopping-cart-line.svg" alt=""> - <span class="cart-amunt">R$100</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!--CAPA DA PÁGINA-->
+    <div class="titulo-geral-bg">
+        <div class="titulo-geral container">
+            <h2 class="cor-3">Guitarras</h2>
+        </div>
+    </div>
+    <div class="categoria-produto container">
+        <p><a href="index.html" class="cor-3">Home / </a><a href="#" class="cor-3">Category Name /</a> <a href="#" class="cor-6">SG Special</a></p>
+    </div>
+
+    <section class="produto-container container">
+        <div class="guitarra-imagens">
+            <img src="assets/produtos/SG Special-G.png" alt="Guitarra azul">
+            <img src="assets/produtos/SG Special-G-detail.png" alt="Guitarra azul">
+            <img src="assets/produtos/SG Special-G-back .png" alt="Guitarra azul">
+        </div>
+
+        <div class="detalhes-produto">
+            <h2 class="cor-6">SG Special - Faded Pelham Blue</h2>
+            <span class="cor-3">$ 3.900,00</span>
+            <form action="" class="cart">
+                <div class="quantity">
+                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
+                </div>
+                <button class="add_to_cart_button botao-carrinho" type="submit">Add to cart</button>
+            </form>
+
+            <!--DESCRIÇÃO/REVIEWS-->
+            <div class="tab-geral">
+                <div class="tab_conteudo">
+                    <button class="tab_botao active cor-6">Descrição</button>
+                    <button class="tab_botao cor-6">Reviews</button>
+                </div>
+                <div class="conteudo-caixa">
+                    <div class="conteudo aparecer">
+                        <h2 class="cor-6">Descrição do Produto</h2>
+                        <p class="cor-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.
+                        Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>
+                    </div>
+                    <div class="conteudo">
+                        <h2 class="cor-6">Reviews</h2>
+                        <div class="submit-review cor-6">
+                            <div class="submit-review-campo submit-review1">
+                                <label for="name">Nome</label>
+                                <input name="name" type="text">
+                            </div>
+                            <div class="submit-review-campo">
+                                <label for="email">Email</label>
+                                <input name="email" type="email">
+                            </div>
+                            <div class="rating-chooser">
+                                <p class="cor-6">Sua nota</p>
+
+                                <div class="rating-post cor-6">
+                                    <i class="estrela e-ativo" data-avaliacao="1" id="rate-1"></i>
+                                    <i class="estrela" data-avaliacao="2" id="rate-2"></i>
+                                    <i class="estrela" data-avaliacao="3" id="rate-3"></i>
+                                    <i class="estrela" data-avaliacao="4" id="rate-4"></i>
+                                    <i class="estrela" data-avaliacao="5" id="rate-5"></i>
+                                </div>
+                            </div>
+                            <div class="seu-review">
+                                <label for="review" class="cor-6">Seu review</label>
+                                <textarea name="review" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="enviar-msg">
+                                <input type="submit" value="Enviar" class="botao-carrinho">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--BUSCA PRODUTO-->
+            <div class="busca-produto">
+                <h2 class="cor-3">Buscar Produtos</h2>
+                <form action="">
+                    <input type="text" placeholder="Buscar produtos..." class="buscar-input">
+                    <input type="submit" value="Buscar" class="botao-carrinho">
+                </form>
+            </div>
+            <div class="busca-produto-detalhes-p">
+                <div class="busca-recente">
+                    <a href="#"><img src="assets/produtos/SG Special-BUSCA.svg" alt=""></a>
+                    <h3 class="cor-6"><a href="#">SG Special - Faded Pelham Blue</a></h3>
+                    <span class="cor-3">$ 3.900,00</span>
+                </div>
+                <div class="busca-recente">
+                    <a href="#"><img src="assets/produtos/70s Explorer-BUSCA.svg" alt=""></a>
+                    <h3 class="cor-6"><a href="#">70's Explorer - The Classic White</a></h3>
+                    <span class="cor-3">$ 3.700,00</span>
+                </div>
+                <div class="busca-recente">
+                    <a href="#"><img src="assets/produtos/Striker Figured-BUSCA.svg" alt=""></a>
+                    <h3 class="cor-6"><a href="#">Striker Figured HSS - Black</a></h3>
+                    <span class="cor-3">$ 1.200,00</span>
+                </div>
+                <div class="busca-recente">
+                    <a href="#"><img src="assets/produtos/Lespaul-BUSCA.svg" alt=""></a>
+                    <h3 class="cor-6"><a href="#">Les Paul Standard 50s Faded</a></h3>
+                    <span class="cor-3">$ 5.200,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+        <!--FOOTER-->
+        <footer class="footer-bg">
+            <div class="news-redes container">
+                <div class="newsletter">
+                    <span class="cor-1">newsletter</span>
+                    <form action="#">
+                        <input type="text" placeholder="type your email">
+                        <button type="submit" value="Subscribe" class="botao botao-2"><img src="assets/icon/octicon_mail-24-branco.svg" alt="">Subscribe</button>
+                    </form>
+                </div>
+                <ul class="redes-footer">
+                    <li>
+                        <a href="#"><img src="assets/icon/icon-twitter 1.svg" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icon/raphael_feed.svg" alt="Feed"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icon/icon-instagram 1.svg" alt="Instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icon/icon-facebook 1.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icon/icon-youtube 1.svg" alt="Youtube"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-geral-footer container">
+                <div class="info-empresa-footer">
+                    <img src="assets/icon/Guitar SuperheroM.svg" alt="Guitar Superhero logo">
+                    <p class="cor-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                </div>
+                <div class="navegacao-footer">
+                    <h3 class="cor-1">Navegação</h3>
+                    <ul class="navegacao-lista cor-1">
+                        <li><a href="#">Minha Conta</a></li>
+                        <li><a href="#">Meus pedidos</a></li>
+                        <li><a href="#">Lista de Desejos</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="navegacao-footer">
+                    <h3 class="cor-1">Navegação</h3>
+                    <ul class="navegacao-lista cor-1">
+                        <li><a href="#">Categoria 01</a></li>
+                        <li><a href="#">Categoria 02</a></li>
+                        <li><a href="#">Categoria 03</a></li>
+                        <li><a href="#">Categoria 04</a></li>
+                        <li><a href="#">Categoria 05</a></li>
+                    </ul>
+                </div>
+                <div class="contato-geral-footer">
+                    <h3 class="cor-1">Fale com nós</h3>
+                    <ul class="contato-footer">
+                        <li class="cor-1">
+                            <a href="#"><img src="assets/icon/localização.svg" alt="localização"></a>
+                            Rua ALi Perto Nº 210, Bairro, Porto Alegre
+                        </li>
+                        <li class="cor-1">
+                            <a href="#"><img src="assets/icon/email.svg" alt="E-mail"></a>
+                            suporte_superhero@email.com
+                        </li>
+                        <li class="cor-1">
+                            <a href="#"><img src="assets/icon/fone.svg" alt="Telefone"></a>
+                            +55 (51) 999-999-999
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-final-bg">
+                <div class="footer-final container">
+                    <img src="assets/icon/Guitar Superhero P.svg" alt="Guitar Superhero logo">
+                    <p class="cor-1">© 2023 Marcelo Bogado - Alguns direitos reservados.</p>
+                    <ul class="cartoes">
+                        <li>
+                            <img src="assets/icon/mastercard.svg" alt="Mastercard">
+                        </li>
+                        <li>
+                            <img src="assets/icon/visa.svg" alt="Visa">
+                        </li>
+                        <li>
+                            <img src="assets/icon/discovery.svg" alt="Discover">
+                        </li>
+                        <li>
+                            <img src="assets/icon/paypal.svg" alt="paypal">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    
+
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+/*LOGIN*/
+.titulo-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.titulo-login h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.esqueci-geral {
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.login-geral {
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+#login-form h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.login-usuario input {
+    padding: 10px;
+    width: 240px;
+    border: 1px solid #cfcdcd;
+}
+
+.login-usuario input:focus {
+    outline: none;
+    border-color: #755f3d;
+    box-shadow: 0 0 0 2px #fea;
+}
+
+.button {
+    padding: 10px 24px;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--cor-1);
+    background: var(--cor-3);
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+    max-width: max-content;
+}
+
+.button:hover {
+    background: linear-gradient(var(--cor-3), #755f3d);
+}
